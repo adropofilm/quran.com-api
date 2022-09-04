@@ -63,6 +63,11 @@ namespace :v4 do
   # Footnote
   get 'foot_notes/:id', to: 'foot_notes#show'
 
+  # RSS feed
+  namespace :podcast do
+    get :recitations
+  end
+
   # available resources
   namespace :resources do
     get :translations
